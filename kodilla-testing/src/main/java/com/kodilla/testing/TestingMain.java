@@ -21,17 +21,12 @@ public class TestingMain {
         Calculator calculator = new Calculator();
 
         int result1 = calculator.add(5, 3);
-        if (result1 == 8) {
-            System.out.println("Test Calculator (add) - OK");
+        int result2 = calculator.subtract(10, 7);
+        if (result1 == 8 && result2 == 3) {
+            System.out.println("Test Calculator  - OK");
         } else {
-            System.out.println("Test Calculator (add) - Error!");
+            System.out.println("Test Calculator  - Error!");
         }
 
-        int result2 = calculator.subtract(10, 7);
-        if (result2 == 3) {
-            System.out.println("Test Calculator (subtract) - OK");
-        } else {
-            System.out.println("Test Calculator (subtract) - Error!");
-        }
     }
 }
